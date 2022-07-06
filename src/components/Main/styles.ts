@@ -101,13 +101,27 @@ table {
     margin-top: 1.75rem;
     width: 300px;
     height: 15px;
+    cursor: pointer;
+      -moz-transition: all 0.3s;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+  
+  &:hover {
+      -moz-transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
   }
+}
 }
 `
 export const SectionFour = styled.div`
   display: flex;
   gap: 5rem;
   margin-left: -20rem;
+  .column > section{
+    display: flex;
+    gap: 2rem;
+  }
 
   .table{
   margin-left: -7.6rem;
